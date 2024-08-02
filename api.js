@@ -8,7 +8,7 @@ servidor.get('/calculadora/somar/:n1/:n2', (req, resp) => {
     resp.send("o resultado da soma é:" + soma)
 })
 
-servidor.get('/calculadora/subtrair/:n1/:n2', (req, resp) =>{
+servidor.get('/calculadora/subtrair/:n3/:n2', (req, resp) =>{
     let n3 = Number(req.params.n3)
     let n2 = Number(req.params.n2)
     let subtrair = n3 - n2
